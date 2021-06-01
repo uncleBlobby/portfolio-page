@@ -1,5 +1,5 @@
 let introString = "Thanks for dropping by.  My name is \nDustin.  I am a web developer and \nfront-end engineer, proficient in \nHTML / CSS and Javascript.\n\n" + 
-                  "Please feel free to have a look around. \n\nCheck out some of my projects, read a bit more about me, and connect."
+                  "Please feel free to have a look around. \n\nCheck out some of my projects, read a \nbit more about me, and connect."
 
 let introductionTextHandle = document.getElementById("introductionText");
 
