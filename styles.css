@@ -1,0 +1,78 @@
+:root {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    color: white;
+}
+
+body {
+    background-color: #292929;
+    display: flexbox;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@keyframes slideInFromLeft {
+    from { margin-left: 160rem};
+    to { margin-left: 10rem};
+}
+
+@keyframes slideOutToRight {
+    from { margin-left: -10rem};
+    to { margin-left: -160rem;}
+}
+
+@keyframes fadeOutText {
+    from { color: white };
+    to { color: #292929 };
+}
+
+
+#welcome {
+    margin-top: 5rem;
+    margin-left: -160rem;
+    height: 20rem;
+    width: 100%;
+    border: 1px dashed black;
+    animation-name: slideOutToRight;
+    animation-duration: 8s;
+}
+
+#welcomeText {
+    font-size: 8rem;
+    margin-top: 5rem;
+    margin-right: 10rem;
+    text-align: right;
+    animation-name: fadeOutText;
+    animation-duration: 4s;
+    color: #292929;
+}
+
+#introduction {
+    position: absolute;
+    top: 10rem;
+    display: grid;
+    grid-template-columns: 15rem auto auto;
+    grid-template-rows: auto;
+    margin-left: 10rem;
+    height: 20rem;
+    width: 100%;
+    border: 1px dashed white;
+    animation-name: slideInFromLeft;
+    animation-duration: 4s;
+}
+
+#introImage {
+    display: block;
+    height: 20rem;
+    width: 15rem;
+    border: 1px dashed white;
+}
+
+#introductionText {
+    display: inline-block;
+    line-height: 1.2rem;
+    height: 15rem;
+    width: 25rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
