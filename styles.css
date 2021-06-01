@@ -90,9 +90,50 @@ body {
     text-align: center;
     height: 10rem;
     width: 15rem;
-    border: 1px dashed #696969;
+
 }
 
 .linkBTN:hover {
-    border: 1px solid #696969;
+
+}
+
+.linkIcon {
+    background-repeat: no-repeat;
+    background-size: 15rem 20rem;
+}
+
+#projectsLinkBTN {
+    background-image: url("img/projectsIcon.svg");
+    background-size: 15rem 20rem;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+
+#projectsLinkBTN:hover {
+    background-size: 15rem 18rem;
+    opacity: 1;
+}
+
+#aboutLinkBTN {
+    background-image: url("img/aboutIcon.svg");
+    background-size: 15rem 20rem;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+
+#aboutLinkBTN:hover {
+    background-size: 15rem 18rem;
+    opacity: 1;
+}
+
+#connectLinkBTN {
+    background-image: url("img/connectIcon2.svg");
+    background-size: 15rem 20rem;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+
+#connectLinkBTN:hover {
+    background-size: 15rem 18rem;
+    opacity: 1;
 }
