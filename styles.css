@@ -16,9 +16,23 @@ body {
     to { margin-left: 5rem; }
 }
 
+@media only screen and (max-width: 500px) {
+    @keyframes slideInFromLeft {
+        from { margin-left: 160rem; }
+        to { margin-left: 3rem; }
+    }
+}
+
 @keyframes slideOutToRight {
     from { margin-left: -10rem;}
     to { margin-left: -160rem;}
+}
+
+@media only screen and (max-width: 500px) {
+    @keyframes slideOutToRight {
+        from { margin-left: 20rem;}
+        to { margin-left: -160rem;}   
+    }
 }
 
 @keyframes fadeOutText {
@@ -35,6 +49,13 @@ body {
     opacity: 0.25;
 }
 
+@media only screen and (max-width: 500px) {
+    #header {
+        height: 3rem;
+        font-size: 2rem;
+    }
+}
+
 
 #welcome {
     position: absolute;
@@ -47,6 +68,21 @@ body {
     animation-name: slideOutToRight;
     animation-duration: 8s;
 }
+
+@media only screen and (max-width: 500px) {
+    #welcome {
+        position: absolute;
+        top: 2rem;
+        margin-top: 1rem;
+        margin-left: -160rem;
+        height: 10rem;
+        width: 100%;
+        border: 1px dashed #292929;
+        animation-name: slideOutToRight;
+        animation-duration: 8s;
+    }
+}
+
 
 #welcomeText {
     font-size: 8rem;
@@ -73,11 +109,39 @@ body {
     animation-duration: 4s;
 }
 
+@media only screen and (max-width: 500px) {
+    #introduction {
+        position: absolute;
+        top: 1rem;
+        display: grid;
+        grid-template-columns: 15rem;
+        grid-template-rows: 15rem 5rem 5rem;
+        margin-left: 3rem;
+        margin-right: 5rem;
+        height: 30rem;
+        width: 100%;
+        border: 1px dashed #292929;
+        animation-name: slideInFromLeft;
+        animation-duration: 4s;
+    }
+}
+
 #introImage {
     display: block;
     height: 20rem;
     width: 15rem;
     border: 1px dashed #292929;
+}
+
+@media only screen and (max-width: 500px) {
+    #introImage{
+        display:block;
+        height: 20rem;
+        width: 15rem;
+        background-size: 5rem 7.5rem;
+        opacity: 0.75;
+
+    }
 }
 
 #introductionText {
@@ -87,6 +151,18 @@ body {
     width: 25rem;
     margin-top: 4.5rem;
     margin-left: 5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    #introductionText {
+        font-size:0.65rem;
+        display:inline-block;
+        line-height: 0.9rem;
+        height: 5rem;
+        width: 15rem;
+        margin-top: 0.8rem;
+        margin-left: 1.2rem;
+    }
 }
 
 #introImage {
@@ -108,11 +184,14 @@ body {
     text-align: center;
     height: 10rem;
     width: 15rem;
-
 }
 
-.linkBTN:hover {
-
+@media only screen and (max-width: 500px) {
+    .linkBTN {
+        visibility: hidden;
+        height: 2rem;
+        width: 3rem;
+    }
 }
 
 .linkIcon {
@@ -126,6 +205,13 @@ body {
     background-size: 15rem 20rem;
     background-repeat: no-repeat;
     opacity: 0.75;
+}
+
+@media only screen and (max-width: 500px) {
+    .projectsLinkBTN {
+        visibility: hidden;
+        background-size: 1.4rem 2rem;
+    }
 }
 
 #projectsLinkBTN:hover {
@@ -158,3 +244,4 @@ body {
     background-size: 15rem 18rem;
     opacity: 1;
 }
+
