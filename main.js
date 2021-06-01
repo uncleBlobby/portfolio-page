@@ -62,9 +62,15 @@ setTimeout(function(){ buildOutputString(); }, 2000);
 
 
 function spawnLinkButtons() {
+    if(screen.width > 500){
     projectsLinkBTN.style.visibility = "visible";
     aboutLinkBTN.style.visibility    = "visible"; 
     connectLinkBTN.style.visibility  = "visible";
+    }
 }
 
+
 spawnLinkButtons();
+
+console.log(screen.width);
+
