@@ -12,12 +12,12 @@ body {
 }
 
 @keyframes slideInFromLeft {
-    from { margin-left: 160rem};
-    to { margin-left: 10rem};
+    from { margin-left: 160rem; }
+    to { margin-left: 5rem; }
 }
 
 @keyframes slideOutToRight {
-    from { margin-left: -10rem};
+    from { margin-left: -10rem;}
     to { margin-left: -160rem;}
 }
 
@@ -26,8 +26,19 @@ body {
     to { color: #292929 };
 }
 
+#header {
+    padding-top: 1.5rem;
+    text-align: center;
+    height: 8rem;
+
+    font-size: 6rem;
+    opacity: 0.25;
+}
+
 
 #welcome {
+    position: absolute;
+    top: 5rem;
     margin-top: 5rem;
     margin-left: -160rem;
     height: 20rem;
@@ -53,8 +64,9 @@ body {
     display: grid;
     grid-template-columns: 15rem 35rem 15rem 15rem 15rem;
     grid-template-rows: auto;
-    margin-left: 10rem;
-    height: 20rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 30rem;
     width: 100%;
     border: 1px dashed #292929;
     animation-name: slideInFromLeft;
@@ -81,6 +93,12 @@ body {
     background-image: url("img/devIcon.svg");
     background-repeat: no-repeat;
     background-size: 15rem 20rem;
+    opacity: 0.75;
+}
+
+#introImage:hover {
+    opacity: 1;
+    background-size: 15rem 20rem;
 }
 
 .linkBTN {
@@ -103,6 +121,7 @@ body {
 }
 
 #projectsLinkBTN {
+    visibility: hidden;
     background-image: url("img/projectsIcon.svg");
     background-size: 15rem 20rem;
     background-repeat: no-repeat;
@@ -115,6 +134,7 @@ body {
 }
 
 #aboutLinkBTN {
+    visibility: hidden;
     background-image: url("img/aboutIcon.svg");
     background-size: 15rem 20rem;
     background-repeat: no-repeat;
@@ -127,6 +147,7 @@ body {
 }
 
 #connectLinkBTN {
+    visibility: hidden;
     background-image: url("img/connectIcon2.svg");
     background-size: 15rem 20rem;
     background-repeat: no-repeat;
